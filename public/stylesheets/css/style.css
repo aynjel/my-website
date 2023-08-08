@@ -88,25 +88,27 @@ body .main .hero-body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 }
 body .main .hero-body .title {
   color: #FFFFFF;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-align: center;
   text-transform: capitalize;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
 }
 body .main .hero-body .hero-btn {
   background-color: #00A3A3;
   border: none;
   outline: none;
-  padding: 10px 20px;
+  padding: 12px 30px;
   border-radius: 5px;
   color: #FFFFFF;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -118,17 +120,13 @@ body .main .hero-body .hero-btn:active {
   transform: scale(0.95);
 }
 body .main .services {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
   width: 100%;
 }
 body .main .services .services-body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 body .main .services .services-body .title {
   color: #003366;
@@ -141,7 +139,7 @@ body .main .services .services-body .services-list {
   display: flex;
   align-items: center;
   flex-direction: column;
-  gap: 60px;
+  gap: 100px;
 }
 body .main .services .services-body .services-list .services-list-item {
   display: flex;
@@ -151,27 +149,168 @@ body .main .services .services-body .services-list .services-list-item {
   width: calc(100% - 40px);
 }
 body .main .services .services-body .services-list .services-list-item img {
-  width: 100%;
-  height: 100%;
+  width: 680px;
   object-fit: cover;
 }
 body .main .services .services-body .services-list .services-list-item .content {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  text-align: right;
-  gap: 10px;
-  padding: 20px;
+  text-align: left;
 }
-body .main .services .services-body .services-list .services-list-item .content .services-list-item-title {
+body .main .services .services-body .services-list .services-list-item .content h3 {
   color: #00A3A3;
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: capitalize;
+  margin: 0;
+}
+body .main .services .services-body .services-list .services-list-item .content p {
+  color: #333333;
+  font-size: 1rem;
+  text-transform: capitalize;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 body .main .services .services-body .services-list .services-list-item:nth-child(2) {
   flex-direction: row-reverse;
+}
+body .main .services .services-body .services-list .services-list-item:nth-child(2) .content {
+  text-align: justify;
+}
+body .main .about {
+  background-color: #003366;
+  color: #F0F0F0;
+  width: 100%;
+  padding: 80px 0;
+}
+body .main .about .about-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+body .main .about .about-body .about-heading {
+  text-align: center;
+  width: calc(100% - 140px);
+}
+body .main .about .about-body .about-heading h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+body .main .about .about-body .about-heading h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+body .main .about .about-body .about-heading p {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+}
+body .main .about .about-body .about-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 60px;
+  padding: 0 40px;
+  margin: 0;
+}
+body .main .about .about-body .about-list .about-list-item {
+  list-style: none;
+  width: 33.3333333333%;
+}
+body .main .about .about-body .about-list .about-list-item .about-list-heading {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+}
+body .main .about .about-body .about-list .about-list-item .about-list-heading h4 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+body .main .about .about-body .about-list .about-list-item p {
+  font-size: 0.9rem;
+  text-align: justify;
+  color: #e7e7e7;
+}
+body .main .about .about-body .about-choose {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+body .main .about .about-body .about-choose h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+body .main .about .about-body .about-choose .about-choose-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% - 100px);
+}
+body .main .about .about-body .about-choose .about-choose-list .about-choose-list-item p {
+  font-size: 1rem;
+  text-align: justify;
+}
+body .main .about .about-body .about-choose .about-choose-list .about-choose-list-item span {
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #e7e7e7;
+  transition: all 0.1s ease-in-out;
+}
+body .main .about .about-body .about-choose .about-choose-list .about-choose-list-item span:hover {
+  border-bottom: 2px solid #00A3A3;
+  color: #00A3A3;
+  cursor: pointer;
+}
+body .main .about .about-body .about-join {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: calc(100% - 100px);
+}
+body .main .about .about-body .about-join h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+}
+body .main .about .about-body .about-join p {
+  font-size: 0.9rem;
+  text-align: justify;
+  color: #e7e7e7;
+}
+body .main .about .about-body .about-join a {
+  background-color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #00A3A3;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+}
+body .main .about .about-body .about-join a:hover {
+  color: #FFFFFF;
+  background-color: #00A3A3;
+}
+body .main .about .about-body .about-join a:active {
+  transform: scale(0.9);
 }
 body .footer {
   background-color: #FFFFFF;
