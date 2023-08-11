@@ -1,21 +1,80 @@
 <footer class="footer">
-    <a href="/" class="footer-logo">
-        Web<span class="logo-span">AppCraft</span>
-    </a>
-    <ul class="footer-list">
-        <li class="footer-list-item">
-        <a href="#services" class="footer-link">Services</a>
+    <div class="footer-heading">
+        <a href="/" class="footer-logo">
+            Web<span class="logo-span">AppsCraft</span>
+        </a>
+        <p>
+            Elevate your online presence with our custom web solutions. We specialize in website applications, captivating designs, and efficient databases.
+        </p>
+        <ul class="footer-contacts">
+            <li class="footer-contacts-item">
+                <i class="fas fa-mail-bulk footer-contacts-icon"></i>
+                <a href="mailto:<%= email %>" class="footer-contacts-link"><%= email %></a>
+            </li>
+            <li class="footer-contacts-item">
+                <i class="fas fa-phone-alt footer-contacts-icon"></i>
+                <a href="tel:<%= phone %>" class="footer-contacts-link"><%= phone %></a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="footer-body">
+        <ul class="footer-list">
+            <li class="footer-list-item">
+            <a href="#services" class="footer-link">Services</a>
+            </li>
+            <li class="footer-list-item">
+            <a href="#portfolio" class="footer-link">Portfolio</a>
+            </li>
+            <li class="footer-list-item">
+            <a href="#blog" class="footer-link">Blog</a>
+            </li>
+        </ul>
+    </div>
+
+    
+    <ul class="social-media-links">
+        <li class="social-media-item">
+            <a href="https://www.facebook.com/" class="social-media-link">
+                Facebook
+                <i class="fab fa-facebook-f"></i>
+            </a>
         </li>
-        <li class="footer-list-item">
-        <a href="#portfolio" class="footer-link">Portfolio</a>
+        <li class="social-media-item">
+            <a href="https://www.instagram.com/" class="social-media-link">
+                Instagram
+                <i class="fab fa-instagram"></i>
+            </a>
         </li>
-        <li class="footer-list-item">
-        <a href="#blog" class="footer-link">Blog</a>
+        <li class="social-media-item">
+            <a href="https://www.twitter.com/" class="social-media-link">
+                Twitter
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+        <li class="social-media-item">
+            <a href="https://www.discord.com/" class="social-media-link">
+                Discord
+                <i class="fab fa-discord"></i>
+            </a>
+        </li>
+        <li class="social-media-item">
+            <a href="https://www.youtube.com/" class="social-media-link">
+                Youtube
+                <i class="fab fa-youtube"></i>
+            </a>
+        </li>
+        <li class="social-media-item">
+            <a href="https://www.github.com/" class="social-media-link">
+                Github
+                <i class="fab fa-github"></i>
+            </a>
+        </li>
+        <li class="social-media-item">
+            <a href="https://www.linkedin.com/" class="social-media-link">
+                LinkedIn
+                <i class="fab fa-linkedin-in"></i>
+            </a>
         </li>
     </ul>
-
-    <address class="address">
-        <a href="mailto:<%= email %>.com" class="address-link"><%= email %>.com</a>
-        <a href="tel:+<%= phone %>" class="address-link"><%= phone %></a>
-    </address>
 </footer>
